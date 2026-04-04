@@ -33,7 +33,7 @@ class ContactController extends FrontendController
         );
 
         $system = $this->system;
-        $seo = $this->buildSeo('Liên Hệ — Homedy');
+        $seo = $this->buildSeo('Liên Hệ — BDS Seller');
         $schema = $this->schema($seo);
         $config = $this->config();
 
@@ -52,7 +52,7 @@ class ContactController extends FrontendController
     private function buildSeo($title = null)
     {
         return [
-            'meta_title' => $title ?? ($this->system['seo_meta_title'] ?? 'Homedy'),
+            'meta_title' => $title ?? ($this->system['seo_meta_title'] ?? 'BDS Seller'),
             'meta_keyword' => $this->system['seo_meta_keyword'] ?? '',
             'meta_description' => $this->system['seo_meta_description'] ?? '',
             'meta_image' => $this->system['seo_meta_images'] ?? '',

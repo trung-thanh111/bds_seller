@@ -9,7 +9,7 @@
         <div class="hp-luxury-header__content">
             <div class="uk-container uk-container-center">
                 <div class="hp-luxury-header__title-wrap" data-reveal="up">
-                    <h1 class="hp-luxury-header__title">{{ $property->title ?? 'Homedy Residence' }}</h1>
+                    <h1 class="hp-luxury-header__title">{{ $property->title ?? 'BDS Seller Residence' }}</h1>
                     <p class="hp-luxury-header__desc hp-hero-subtitle-main">
                         {{ $property->description_short ?? 'Không gian sống sang trọng được thiết kế dành cho cuộc sống hiện đại.' }}
                     </p>
@@ -328,7 +328,7 @@
                 <div class="hp-cta-box" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">
                     <span class="hp-section-num">06</span>
                     <div class="hp-title-serif">Liên hệ</div>
-                    <h2 class="hp-subtitle-dark">Quan tâm đến {{ $property->title ?? 'Homedy' }}?</h2>
+                    <h2 class="hp-subtitle-dark">Quan tâm đến {{ $property->title ?? 'BDS Seller' }}?</h2>
                     <p class="hp-cta-desc">
                         Hệ thống tiện ích hiện đại cùng không gian sống xanh tại Linden Residence hứa hẹn mang đến một tổ ấm
                         lý tưởng.
@@ -341,7 +341,7 @@
 
                 <div class="hp-cta-img-wrap" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:500}">
                     <div class="hp-badge-accent hp-badge-yellow">Sang trọng</div>
-                    <img src="{{ $img1 }}" alt="Interested in Homedy">
+                    <img src="{{ $img1 }}" alt="Interested in BDS Seller">
                 </div>
             </div>
         </div>

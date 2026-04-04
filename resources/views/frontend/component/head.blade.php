@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 <link rel="stylesheet" href="{{ asset('vendor/backend/css/plugins/select2/select2.min.css') }}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-<link rel="stylesheet" href="{{ asset('frontend/resources/css/homedy.css') }}">
+<link rel="stylesheet" href="{{ asset('frontend/resources/css/BDS Seller.css') }}">
 
 @if (isset($config['css']) && is_array($config['css']))
     @foreach ($config['css'] as $key => $val)

@@ -1,5 +1,5 @@
 /**
- * Homedy — Frontend Interactions
+ * BDS Seller — Frontend Interactions
  */
 (function () {
     'use strict';

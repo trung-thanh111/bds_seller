@@ -38,7 +38,7 @@
         </div>
 
         <div style="text-align: center; padding: 10px; opacity: 0.5; font-size: 10px;">
-            {{ $system['copyright'] ?? 'Copyright © 2024 Homedy' }}
+            {{ $system['copyright'] ?? 'Copyright © 2024 BDS Seller' }}
         </div>
     </div>
 </div>

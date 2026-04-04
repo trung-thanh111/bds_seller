@@ -33,7 +33,7 @@
                     <div class="hp-title-serif">Nghệ thuật sống</div>
                     <h2 class="hp-subtitle-dark">Đặc quyền cư dân,<br>tinh tế từng chi tiết</h2>
                     <p class="hp-text-desc uk-margin-large-bottom" style="max-width: 600px; margin: 0 auto;">
-                        Mỗi tiện ích tại {{ $property->title ?? 'Homedy' }} đều được chọn lọc và thiết kế kỹ lưỡng nhằm
+                        Mỗi tiện ích tại {{ $property->title ?? 'BDS Seller' }} đều được chọn lọc và thiết kế kỹ lưỡng nhằm
                         nâng cao chất lượng cuộc sống hàng ngày của bạn.
                     </p>
                 </div>

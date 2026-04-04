@@ -6,13 +6,13 @@
                     <img src="{{ $system['homepage_logo'] ?? asset('frontend/resources/img/homely/logo.webp') }}"
                         alt="Logo" class="footer-logo-main uk-margin-bottom">
                     <p class="footer-contact-info">
-                        Email: <span>{{ $system['contact_email'] ?? 'contact@homedy.com' }}</span></p>
+                        Email: <span>{{ $system['contact_email'] ?? 'contact@BDS Seller.com' }}</span></p>
                     <p class="footer-contact-info">
                         Hotline CSKH:
                         <span>{{ get_hotline($agent ?? null, $system['contact_hotline'] ?? '098.328.4379') }}</span>
                     </p>
                     <p class="footer-disclaimer">
-                        Homedy.vn có trách nhiệm chuyển tải thông tin. Mọi thông tin chỉ có giá trị tham khảo.
+                        BDS Seller.vn có trách nhiệm chuyển tải thông tin. Mọi thông tin chỉ có giá trị tham khảo.
                         Chúng tôi không chịu trách nhiệm từ các tin đăng và thông tin quy hoạch được đăng tải trên trang
                         này.
                     </p>
