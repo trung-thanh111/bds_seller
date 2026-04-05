@@ -1961,7 +1961,7 @@ input:checked+.gl-slider:before {
 @media (max-width: 959px) {
     .gl-post-title {
         font-size: 15px;
-        height: 42px;
+        height: 50px;
     }
 
     .gl-post-desc {
