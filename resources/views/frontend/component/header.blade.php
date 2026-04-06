@@ -73,9 +73,28 @@
                         @php
                             $name = $val['item']->languages->first()->pivot->name;
                             $canonical = write_url($val['item']->languages->first()->pivot->canonical, true, true);
+                            $hasChildren = isset($val['children']) && count($val['children']) > 0;
                         @endphp
-                        <li class="gl-nav-item">
-                            <a href="{{ $canonical }}">{{ $name }}</a>
+                        <li class="gl-nav-item {{ $hasChildren ? 'has-dropdown' : '' }}">
+                            <a href="{{ $canonical }}">
+                                {{ $name }}
+                                @if ($hasChildren)
+                                    <i class="fa fa-angle-down uk-margin-small-left"></i>
+                                @endif
+                            </a>
+                            @if ($hasChildren)
+                                <ul class="gl-dropdown-menu">
+                                    @foreach ($val['children'] as $child)
+                                        @php
+                                            $childName = $child['item']->languages->first()->pivot->name;
+                                            $childCanonical = write_url($child['item']->languages->first()->pivot->canonical, true, true);
+                                        @endphp
+                                        <li class="gl-dropdown-item">
+                                            <a href="{{ $childCanonical }}">{{ $childName }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            @endif
                         </li>
                     @endforeach
                 @endif

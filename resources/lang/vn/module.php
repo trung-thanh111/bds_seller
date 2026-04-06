@@ -7,6 +7,8 @@ return [
         'ProductCatalogue' => 'Nhóm Sản Phẩm',
         'Product' => 'Sản Phẩm',
         'RealEstateCatalogue' => 'Nhóm Bất Động Sản',
+        'ProjectCatalogue' => 'Nhóm Dự Án',
+        'Project' => 'Dự Án',
         'AttributeCatalogue' => 'Nhóm Thuộc Tính',
         'Attribute' => 'Thuộc Tính',
     ],

@@ -96,12 +96,15 @@
                 scrollbar-width: none;
                 -ms-overflow-style: none;
             }
+
             .hp-hero-dropdown-grid::-webkit-scrollbar {
                 display: none;
             }
+
             .hp-filter-dropdown {
                 flex: 0 0 auto !important;
             }
+
             .hp-filter-btn {
                 min-width: 110px !important;
                 padding: 0 10px !important;

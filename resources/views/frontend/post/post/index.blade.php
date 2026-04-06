@@ -220,6 +220,10 @@
         }
 
         @media (max-width: 959px) {
+            .hp-post-detail {
+                padding: 10px;
+            }
+
             .hp-post-detail-title {
                 font-size: 26px;
             }

@@ -31,17 +31,21 @@
                     -ms-overflow-style: none !important;
                     width: 100% !important;
                 }
+
                 .hp-hero-dropdown-grid::-webkit-scrollbar {
                     display: none !important;
                 }
+
                 .hp-filter-dropdown {
                     flex: 0 0 auto !important;
                 }
+
                 .hp-filter-btn {
                     min-width: 110px !important;
                     padding: 0 10px !important;
                     font-size: 13px !important;
                 }
+
                 .hp-filter-btn-more {
                     min-width: 90px !important;
                 }

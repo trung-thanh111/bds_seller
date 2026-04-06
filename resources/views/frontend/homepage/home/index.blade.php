@@ -16,74 +16,112 @@
         @media (max-width: 959px) {
             .gl-hero-filter-container {
                 width: 95% !important;
-                bottom: 10% !important;
+                bottom: 8% !important;
             }
 
             .gl-hero-filter-box {
-                padding: 15px !important;
+                padding: 12px !important;
+                border-radius: 12px !important;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+            }
+
+            .gl-hero-tabs {
+                margin: 0 !important;
+                padding: 0 0 5px 0 !important;
+                justify-content: flex-start !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+            }
+
+            .gl-hero-tab-item {
+                background: transparent !important;
+                color: rgba(255, 255, 255, 0.8) !important;
+                border-radius: 0 !important;
+                padding: 10px 12px !important;
+                font-weight: 700 !important;
+                font-size: 13px !important;
+                margin: 0 !important;
+                transition: 0.3s;
+                border-bottom: 3px solid transparent !important;
+                white-space: nowrap !important;
+            }
+
+            .gl-hero-tab-item.active {
+                color: #fff !important;
+                border-bottom: 3px solid var(--main-color) !important;
             }
 
             .gl-search-bar-hero {
                 flex-direction: column !important;
                 height: auto !important;
-                background: transparent !important;
+                background: #fff !important;
                 box-shadow: none !important;
-                gap: 10px !important;
+                gap: 0 !important;
+                border: 1px solid #eee !important;
+                border-radius: 10px !important;
+                padding: 0 !important;
+                overflow: hidden;
             }
 
             .gl-search-bar-hero .gl-search-trigger {
                 width: 100% !important;
-                border-right: none !important;
-                border-radius: 8px !important;
+                border: none !important;
+                border-bottom: 1px solid #eee !important;
+                border-radius: 0 !important;
                 background: #fff !important;
-                height: 45px !important;
+                height: 50px !important;
                 padding: 0 15px !important;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                font-size: 14px !important;
             }
 
             .gl-hero-search-wrapper {
                 position: relative;
                 width: 100%;
                 display: flex;
+                background: #fff;
             }
 
             .gl-search-bar-hero .gl-search-input {
                 width: 100% !important;
-                border-radius: 8px !important;
-                height: 45px !important;
-                padding: 0 50px 0 15px !important;
+                border: none !important;
+                height: 50px !important;
+                padding: 0 55px 0 15px !important;
+                font-size: 14px !important;
             }
 
             .gl-search-bar-hero .gl-search-btn {
                 position: absolute !important;
-                right: 0 !important;
-                top: 0 !important;
-                height: 45px !important;
-                width: 45px !important;
-                border-radius: 0 8px 8px 0 !important;
+                right: 8px !important;
+                top: 50% !important;
+                transform: translateY(-50%) !important;
+                height: 36px !important;
+                width: 44px !important;
+                background: var(--main-color) !important;
+                color: #fff !important;
+                border-radius: 8px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none !important;
             }
 
-            /* Fix the overlap in screenshot */
             #label-location-hero {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                max-width: 150px;
+                max-width: 250px;
+                color: #333 !important;
+                font-weight: 500;
             }
 
-            .gl-hero-tabs {
-                gap: 5px !important;
+            .gl-search-trigger i.fa-map-marker-alt {
+                color: var(--main-color) !important;
             }
 
-            .gl-hero-tab-item {
-                padding: 8px 15px !important;
-                font-size: 14px !important;
-            }
-
-            .gl-location-card {
-                margin-bottom: 10px !important;
+            .gl-hero-pane {
+                margin-top: 10px;
             }
         }
 
@@ -384,7 +422,7 @@
         <div class="gl-section gl-location-section ">
             <div class="uk-container uk-container-center">
                 <h2 class="gl-section-title uk-margin-bottom">Bất động sản theo địa điểm</h2>
-                <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-grid uk-grid-small" data-uk-grid-margin>
                     @php $first = $topProvinces[0]; @endphp
                     <div class="uk-width-large-1-2">
                         <a href="/mua-ban.html?province_code={{ $first->province_code }}"
@@ -402,7 +440,7 @@
                     </div>
 
                     <div class="uk-width-large-1-2">
-                        <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
                             @foreach ($topProvinces->slice(1) as $loc)
                                 <div class="uk-width-1-2">
                                     <a href="/mua-ban.html?province_code={{ $loc->province_code }}"

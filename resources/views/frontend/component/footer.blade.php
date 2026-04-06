@@ -6,7 +6,7 @@
                     <img src="{{ $system['homepage_logo'] ?? asset('frontend/resources/img/homely/logo.webp') }}"
                         alt="Logo" class="footer-logo-main uk-margin-bottom">
                     <p class="footer-contact-info">
-                        Email: <span>{{ $system['contact_email'] ?? 'contact@BDS Seller.com' }}</span></p>
+                        Email: <span>{{ $system['contact_email'] ?? 'contact@support.com' }}</span></p>
                     <p class="footer-contact-info">
                         Hotline CSKH:
                         <span>{{ get_hotline($agent ?? null, $system['contact_hotline'] ?? '098.328.4379') }}</span>

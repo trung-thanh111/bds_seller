@@ -86,9 +86,21 @@ class DashboardController extends Controller
         $model = $request->input('model');
         $page = ($request->input('page')) ?? 1;
         $keyword = ($request->string('keyword')) ?? null;
-        $object = null;
+        $object = [
+            'data' => [],
+            'links' => []
+        ]; 
         $serviceInstance = null;
-        $namespace = $post['namespace'] ??  Str::words(Str::headline($model), 1, '');
+        
+        $mapping = [
+            'RealEstate' => 'RealEstate',
+            'RealEstateCatalogue' => 'RealEstate',
+            'Project' => 'RealEstate',
+            'ProjectCatalogue' => 'RealEstate',
+            'Floorplan' => 'RealEstate',
+        ];
+
+        $namespace = $request->input('namespace') ?? ($mapping[$model] ?? Str::words(Str::headline($model), 1, ''));
         $version = 'V1';
         $serviceInterfaceNamespace = '\App\Repositories\\' . $namespace . '\\'  . ucfirst($model) . 'Repository';
 
@@ -121,7 +133,7 @@ class DashboardController extends Controller
             $condition['keyword'] = addslashes($keyword);
         }
         return [
-            'column' => ['id','name','canonical'],
+            'column' => [$model.'s.id','tb2.name','tb2.canonical'],
             'condition' => $condition,
             'perpage' => 20,
             'extend' => [
